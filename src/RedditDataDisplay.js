@@ -4,7 +4,7 @@ const RedditDataDisplay = () => {
   const [redditData, setRedditData] = useState([]);
 
   useEffect(() => {
-    // Fetch the Reddit JSON data
+    
     fetch('https://www.reddit.com/r/reactjs.json')
       .then((response) => response.json())
       .then((data) => setRedditData(data.data.children));
